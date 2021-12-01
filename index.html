@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/img/logo.jpg" />
+  <!-- link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- link icon -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>The Band</title>
+</head>
+
+<body>
+  <!-- header  -->
+  <header>
+    <label for="mobile-input" class="btn-mobile">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+        <title>Menu</title>
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+          d="M80 160h352M80 256h352M80 352h352" />
+      </svg>
+    </label>
+
+    <input type="checkbox" id="mobile-input" class="mobile-input" hidden>
+
+    <label for="mobile-input" class="overlay"></label>
+
+    <!-- menu primary -->
+    <ul class="menu">
+      <label for="mobile-input" class="btn-close">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+          <title>Close</title>
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+            d="M368 368L144 144M368 144L144 368" />
+        </svg>
+      </label>
+      <li class="menu-item">
+        <a href="#">Home</a>
+      </li>
+      <li class="menu-item">
+        <a href="#band">Band</a>
+      </li>
+      <li class="menu-item">
+        <a href="#tour">Tour</a>
+      </li>
+      <li class="menu-item">
+        <a href="#contact">Contact</a>
+      </li>
+      <li class="menu-item">
+        <a href="#">
+          More
+          <ion-icon name="caret-down-outline" class="caret"></ion-icon>
+        </a>
+        <!-- menu sub -->
+        <ul class="menu-sub">
+          <li class="menu-item-sub">
+            <a href="">Merchandise</a>
+          </li>
+          <li class="menu-item-sub">
+            <a href="">Extras</a>
+          </li>
+          <li class="menu-item-sub">
+            <a href="">Media</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <!-- icon search -->
+    <div class="icon-search">
+      <ion-icon name="search-outline"></ion-icon>
+    </div>
+  </header>
+
+  <!-- slider -->
+  <div class="slider">
+    <div class="slider-content">
+      <h3 class="slider-title">Chicago</h3>
+      <p class="slider-desc">Thank you, Chicago - A night we won't forget.</p>
+    </div>
+  </div>
+
+  <!-- Band -->
+  <section class="band" id="band">
+    <div class="container">
+      <h2 class="title">The Band</h2>
+      <p class="slogan">We love music</p>
+      <p class="band-desc">
+        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <ul class="band-pers">
+        <li class="band-item">
+          <p class="band-name">Name</p>
+          <div class="band__img"><img src="./assets/img/member.jpg" alt="" /></div>
+        </li>
+        <li class="band-item">
+          <p class="band-name">Name</p>
+          <div class="band__img"><img src="./assets/img/member.jpg" alt="" /></div>
+        </li>
+        <li class="band-item">
+          <p class="band-name">Name</p>
+          <div class="band__img"><img src="./assets/img/member.jpg" alt="" /></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Tour -->
+  <section class="tour" id="tour">
+    <div class="container">
+      <h2 class="title">Tour Dates</h2>
+      <p class="slogan">Remembers to book your tickets!</p>
+      <ul class="tour-solds">
+        <li class="tour-item">
+          September
+          <span class="tour-label">Sold out</span>
+        </li>
+        <li class="tour-item">
+          October
+          <span class="tour-label">Sold out</span>
+        </li>
+        <li class="tour-item">
+          September
+          <span class="tour-label-2">3</span>
+        </li>
+      </ul>
+
+      <ul class="tour-sites">
+        <li class="tour-site">
+          <img src="./assets/img/newyork.jpg" alt="New York" class="tour-img" />
+          <div class="tour-content">
+            <p class="tour-name">New Your</p>
+            <span class="tour-time">Fri 27 Nov 2016</span>
+            <p class="tour-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <a href="#" class="btn">Buy Tickets</a>
+          </div>
+        </li>
+        <li class="tour-site">
+          <img src="./assets/img/paris.jpg" alt="Paris" class="tour-img" />
+          <div class="tour-content">
+            <p class="tour-name">Paris</p>
+            <span class="tour-time">Fri 27 Nov 2016</span>
+            <p class="tour-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <a href="#" class="btn">Buy Tickets</a>
+          </div>
+        </li>
+        <li class="tour-site">
+          <img src="./assets/img/sanfran.jpg" alt="San Francisco" class="tour-img" />
+          <div class="tour-content">
+            <p class="tour-name">San Francisco</p>
+            <span class="tour-time">Fri 27 Nov 2016</span>
+            <p class="tour-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <a href="#" class="btn">Buy Tickets</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="title">CONTACT</h2>
+      <p class="slogan">Fan? Drop a note!</p>
+      <div class="contact-content">
+        <div class="contact-left">
+          <div class="contact-info-box">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <span class="contact-info">Chicago, US</span>
+          </div>
+          <div class="contact-info-box">
+            <i class="fas fa-phone"></i>
+            <span class="contact-info"> Phone: +00 151515</span>
+          </div>
+          <div class="contact-info-box">
+            <i class="fas fa-envelope"></i>
+            <span class="contact-info">Email: mail@mail.com</span>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form action="#" class="contact-form">
+            <div class="contact-group">
+              <input type="text" placeholder="Name" class="contact-input" required />
+              <input type="email" placeholder="Email" class="contact-input" required />
+            </div>
+            <input type="text" placeholder="Message" class="contact-input contact-input--full" required />
+            <div class="btn-box">
+              <button class="btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <div class="map"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <ion-icon name="logo-javascript" class="footer-icon"></ion-icon>
+    <ion-icon name="logo-tiktok" class="footer-icon"></ion-icon>
+    <ion-icon name="logo-sass" class="footer-icon"></ion-icon>
+    <ion-icon name="logo-facebook" class="footer-icon"></ion-icon>
+    <ion-icon name="logo-twitter" class="footer-icon"></ion-icon>
+    <ion-icon name="logo-tiktok" class="footer-icon"></ion-icon>
+    <p class="footer-copy">Powered by <span>Dunloc</span></p>
+  </footer>
+</body>
+
+</html>
